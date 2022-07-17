@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,64 +8,71 @@
     <title>Portfólio de Carlos Araújo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #d0ddd7ff;
-        }
-        h1 {
-            font-family: 'Oswald', sans-serif;
-        }
-        .texto_sobre {
-            font-family: 'Montserrat Alternates', sans-serif;
-        }
-        #nacionalidade, #naturalidade {
-            color: blue;
-        }
-        .tipo_software {
-            font-style: italic;
-        }
-        .habil01, .habil02 {
-            font-size: smaller;
-        }
-        .habil03, .habil04 {
-            font-size: small;
-        }
-        .habil05 {
-            font-size: medium;
-        }
-        .habil06 {
-            font-size: large;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-   <h1>Carlos Alberto Pedroso Araújo</h1>
-   
-    <p>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#habilidades">Minhas habilidades</a>
-        <a href="#blogs">Blogs que eu curto</a>
-    </p>
-   <h3 id="sobre">Sobre <a href="#foto">mim</a></h3>
-   <p class="texto_sobre">Sou <span id="nacionalidade">brasileiro</span> da cidade de <span id="naturalidade">Santarém no Pará</span>. Me formei em Engenharia Elétrica com ênfase em Eletrônica, mas minha vida toda esteve ligada à computação. De 1985 a 1996 trabalhei exclusivamente como desenvolvedor <span class="tipo_software">stand alone</span>, mas nos últimos 25 anos atuei mais fortemente na educação, especialmente em um curso de Bacharelado em Sistemas de Informação, onde, além de professor, fui coordenador.</p>
-   <img id="foto" src="/imagens/20220504_145237.jpg" alt="Foto de Carlos Araújo" width="200px">
-   <p class="texto_sobre">Atualmente estou buscando nova formação em uma área na qual há grande carência de mão de obra: o <span class="tipo_software">desenvolvimento web</span></p>
-   <h3 id="habilidades">Minhas habilidades</h3>
-   <ul>
-       <li class="habil01">Inglês intermediário</li>
-       <li class="habil02">Java</li>
-       <li class="habil03">Python</li>
-       <li class="habil04">Delphi/Lazarus</li>
-       <li class="habil05">SQL (Structured Query Language)</li>
-       <li class="habil06"><strong>Professor na educação superior</strong></li>
-   </ul>
 
-   <h3 id="blogs">Blogs que eu curto</h3>
-   <p><a href="https://guia.dev/pt/blog.html" target="_blank">Guia-dev</a></p>
-   <p><a href="https://alistapart.com/" target="_blank">A list apart</a></p>
+<body>
+    <section id="perfil">
+        <div id="foto">
+            <img src="/imagens/20220504_145237.jpg" alt="Foto de Carlos Araújo" width="200px">
+        </div>
+        <div id="sobre">
+            <h1>Carlos Araújo</h1>
+            <p>Sou brasileiro da cidade de Santarém no Pará. Me formei em Engenharia Elétrica com ênfase em Eletrônica,
+                mas minha vida toda esteve ligada à computação. De 1985 a 1996 trabalhei exclusivamente como
+                desenvolvedor stand alone, mas nos últimos 25 anos atuei mais fortemente na educação, especialmente em
+                um
+                curso de Bacharelado em Sistemas de Informação, onde, além de professor, fui coordenador. Atualmente
+                estou buscando formação em desenvolvimento web</p>
+        </div>
+        <div id="linha">
+        </div>
+        <div id="dados-contato">
+            <p>Nome: Carlos Alberto P. Araújo</p>
+            <p>e-mail: stonefull.stm@gmail.com</p>
+            <p>Linkedin:</p>
+            <a href="https://www.linkedin.com/in/carlosparaujo/" target="_blank">www.linkedin.com/in/carlosparaujo</a>
+            <p>Celular: (93)99156-2684</p>
+        </div>
+    </section>
+    <section id="menu-container">
+        <div id="menu">
+            <div class="item-menu" id="item-perfil">
+                <img src="./imagens/casa.png" width="50px" alt="Sobre mim">
+                <p class="legenda">Perfil</p>
+            </div>
+            <div class="item-menu" id="item-habilidades">
+                <img src="./imagens/tools.png" width="50px" alt="Habilidades">
+                <p class="legenda">Habilidades</p>
+            </div>
+            <div class="item-menu" id="item-projetos">
+                <img src="./imagens/pagina-da-internet.png" width="50px" alt="Projetos">
+                <p class="legenda">Projetos</p>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <h3>Minhas habilidades</h3>
+        <ul>
+            <li class="habil01">Inglês intermediário</li>
+            <li class="habil02">Java</li>
+            <li class="habil03">Python</li>
+            <li class="habil04">Delphi/Lazarus</li>
+            <li class="habil05">SQL (Structured Query Language)</li>
+            <li class="habil06">Professor na educação superior</li>
+        </ul>
+    </section>
+    <section id="projetos">
+        <h3>Meus projetos</h3>
+        <p><a href="https://stonefullstm.github.io/view-stock/" target="_blank">Consulta ações da B3</a></p>
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
